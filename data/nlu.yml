@@ -1,0 +1,159 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Is anyone there?
+    - whats up
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - I this it is correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - That's helpful
+    - Thank's a lot!
+    - Thank you so much
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - whats is your name?
+    - what should I call you?
+    - How can I address you?
+    - what's your name?
+    - How people call you?    
+
+- intent: out_patient_consultation
+  examples: |
+    - What is the outpatient consulation time
+    - what is the charge for out patient consultation?
+    - When will the doctors attend out patients?
+    - At what time does doctors attend OP?
+    - what is the charge for op consultation
+
+- intent: appointment_confirmation
+  examples: |
+    - I wanted to confirm my appointment
+    - We need to visit doctor today? Is doctor available today?
+    - Could you please verify my appointment
+    - I wanted to make sure that doctor will be available
+    - I already have an appointment, Is it confirmed?
+    
+
+- intent: book_appointment
+  examples: |
+    - I wanted to book an appointment
+    - I need to make an appointment
+    - I need to see the doctor.
+    - when will the doctor be available
+    - I wanted to take an appointment
+
+- intent: medicine_enquiry
+  examples: |
+    - I wanted to know about a [Saridon] (medicine_name) tablet?
+    - For what [Saridon] (medicine_name) this tablet is used?
+    - I wanted to know the side effects and usage of [Saridon] (medicine_name) drug?
+    - Uses of [Saridon] (medicine_name) syrup
+    - Dosage instructions for [Saridon] (medicine_name)
+    - Usage of [Saridon] (medicine_name)
+
+- intent: timing
+  examples: |
+    - How long will you guys be open?
+    - At what time you guys close?
+    - What is the visiting time
+    - Till what time you guys will be open?
+
+- intent: appointment_date
+  examples: |
+    - Book appointment on [12/07/2022](appoint_date)?
+    - [03/05/2023](appoint_date)?
+    - Appointment date should be [03/05/2023](appoint_date)
+    - I would like to get appointment on [06/08/2022](appoint_date)
+    - fix appointment on [30/05/2024](appoint_date)
+    - Please make the appointment on [03/11/2022](appoint_date)
+    - Make the appointment on [30/12/2022](appoint_date)
+
+
+    

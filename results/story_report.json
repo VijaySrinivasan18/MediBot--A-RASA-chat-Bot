@@ -1,0 +1,159 @@
+{
+  "": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 9
+  },
+  "appointment_confirmation_form": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "utter_iamabot": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "appointment_confirmation": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 1
+  },
+  "utter_greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6
+  },
+  "utter_op_enquiry": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "book_appointment": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2
+  },
+  "action_listen": {
+    "precision": 1.0,
+    "recall": 0.7096774193548387,
+    "f1-score": 0.8301886792452831,
+    "support": 31
+  },
+  "mood_great": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 3
+  },
+  "medicine_enquiry": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "bot_challenge": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "utter_cheer_up": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2
+  },
+  "utter_goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2
+  },
+  "thanks": {
+    "precision": 0.4444444444444444,
+    "recall": 1.0,
+    "f1-score": 0.6153846153846153,
+    "support": 4
+  },
+  "utter_happy": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "appointment_form": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "utter_reply_thank": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "out_patient_consultation": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 1
+  },
+  "action_medicine_info": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "mood_unhappy": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6
+  },
+  "micro avg": {
+    "precision": 0.8918918918918919,
+    "recall": 0.7857142857142857,
+    "f1-score": 0.8354430379746834,
+    "support": 84
+  },
+  "macro avg": {
+    "precision": 0.8724747474747474,
+    "recall": 0.9413489736070382,
+    "f1-score": 0.8925477038684586,
+    "support": 84
+  },
+  "weighted avg": {
+    "precision": 0.845568783068783,
+    "recall": 0.7857142857142857,
+    "f1-score": 0.7988351121774302,
+    "support": 84
+  },
+  "accuracy": 0.7857142857142857,
+  "conversation_accuracy": {
+    "accuracy": 0.5,
+    "correct": 4,
+    "with_warnings": 0,
+    "total": 8
+  }
+}

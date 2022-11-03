@@ -1,0 +1,119 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: op_enquiry_sad
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - user: |
+      Till what time will you peope see out patients
+  - intent: out_patient_consultation
+  - action: utter_op_enquiry
+  - user: |
+      That helps, thank you
+  - intent: thanks
+  - action: utter_reply_thank      
+
+- story: appointment_booking
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - user: |
+      I wanted to book an appointment for my friend
+    intent: book_appointment
+  - action: appointment_form 
+  - active_loop: appointment_form
+  - user: |
+      Thank u so much     
+  - intent: thanks
+  - action: utter_reply_thank
+
+- story: appointment_confirmation_happy
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I am good
+  - intent: mood_great
+  - action: utter_happy
+  - user: |
+      I already have appointment and wanted to confirm it.
+  - intent: appointment_confirmation
+  - action: appointment_confirmation_form
+  - active_loop: appointment_confirmation_form
+  - user: |
+      Thank you
+  - intent: thanks
+  - action: utter_reply_thank
+
+- story: medicine_enquiry
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I need to know about dolo-650 tablet
+  - intent: medicine_enquiry
+  - action: action_medicine_info
+  - user: |
+      thanks
+  - user: |
+      Thank you
+  - intent: thanks
+  - action: utter_reply_thank
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot

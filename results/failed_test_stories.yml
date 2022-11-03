@@ -1,0 +1,69 @@
+version: "3.1"
+stories:
+- story: op_enquiry_sad (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - user: |-
+      Till what time will you peope see out patients
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: out_patient_consultation
+  - action: utter_op_enquiry  # predicted: action_unlikely_intent
+  - user: |-
+      That helps, thank you
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: thanks
+  - action: utter_reply_thank
+- story: appointment_booking (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - intent: book_appointment
+  - action: appointment_form
+  - active_loop: appointment_form
+  - user: |-
+      Thank u so much
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: thanks
+  - action: utter_reply_thank
+- story: appointment_confirmation_happy (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - user: |-
+      I am good
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: mood_great
+  - action: utter_happy  # predicted: action_unlikely_intent
+  - user: |-
+      I already have appointment and wanted to confirm it.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: appointment_confirmation
+  - action: appointment_confirmation_form
+  - active_loop: appointment_confirmation_form
+  - user: |-
+      Thank you
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: thanks
+  - action: utter_reply_thank
+- story: medicine_enquiry (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - user: |-
+      I need to know about dolo-650 tablet
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: medicine_enquiry
+  - action: action_medicine_info  # predicted: action_unlikely_intent
+  - user: |-
+      thanks
+  - action: action_listen  # predicted: action_default_fallback
+  - user: |-
+      Thank you
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: thanks
+  - action: utter_reply_thank  # predicted: action_unlikely_intent

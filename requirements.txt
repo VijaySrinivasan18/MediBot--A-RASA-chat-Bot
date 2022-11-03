@@ -1,0 +1,15 @@
+#  env name-  capestone_1
+
+pandas
+numpy
+seaborn
+matplotlib
+scipy
+statsmodels
+scikit-learn
+opencv-python
+openpyxl
+nltk
+flask
+googlesearch-python
+rasa 
